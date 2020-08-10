@@ -1,0 +1,84 @@
+package banksystem;
+
+import java.util.Scanner;
+
+public class Manager {
+	
+	Bank myBank;
+	
+	User user1;
+	User user2;
+	User user3;
+	
+	public Manager() {
+		initSystem();
+	}
+	
+	private void sendMoney(User u1, User u2, int balance) {
+		
+	}
+	
+	private void withDrawal(User u1, int balance) {
+		
+	}
+	
+	private void deposit(User u1, int balance) {
+		myBank.deposit(u1, balance);
+	}
+	
+	private void initSystem() {
+		System.out.println("시스템 가동");
+		user1 = new	User("김김",100000);
+		user2 = new User("이이",200000);
+		user3 = new User("박박",300000);
+		myBank = new Bank("국민은행");
+		
+		System.out.println("[1]송금");
+		System.out.println("[2]출금");
+		System.out.println("[3]입금");
+		System.out.println("거래 할 번호를 입력해주세요");
+		
+		Scanner scan = new Scanner(System.in);
+		int select = scan.nextInt();
+		
+		if(select == 1) {
+			
+		}
+		else if(select == 2) {
+			
+		}
+		else if(select == 3) {
+			System.out.println("입금을 선택하였습니다.");
+			System.out.println("누구에게 입금을 하시겠습니까?");
+			String name = scan.nextLine();
+			System.out.println("얼마를 입금하시겠습니까?");
+			int money = scan.nextInt();
+			
+			if(name.equals(user1.name)){
+				System.out.println(user1.name+"에게 입금을 합니다.");
+				deposit(user1,100000);
+			}
+			
+			else if(name.equals(user2.name)) {
+				System.out.println(user2.name+"에게 입금을 합니다.");
+			}
+			
+			else if(name.equals(user3.name)) {
+				System.out.println(user3.name+"에게 입금을 합니다.");
+			}
+			
+			
+			
+			
+			
+		}
+		else {
+			System.out.println("올바른 번호를 입력해주세요!!");
+		}
+	}
+	
+	private void displayAll() {
+		
+	}
+
+}

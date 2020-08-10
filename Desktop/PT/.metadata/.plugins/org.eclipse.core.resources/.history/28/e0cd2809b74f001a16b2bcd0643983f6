@@ -1,0 +1,14 @@
+package banksystem;
+
+public class BankMain {
+
+	public static void main(String[] args) {
+		
+		
+		new Manager();  // 객체 생성 두줄로 만듦.
+		
+		
+
+	}
+
+}

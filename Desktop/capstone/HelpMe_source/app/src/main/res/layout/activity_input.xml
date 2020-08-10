@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.neominum.helpme.InputActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_input_rl_top"
+        android:orientation="horizontal"
+        android:background="@color/cardview_light_background"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/activity_input_acbtn_cancel"
+                android:text="취 소"
+                android:onClick="onCancel"
+                android:background="@color/cardview_light_background"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="2.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:text="개인정보"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/activity_input_acbtn_register"
+                android:text="완 료"
+                android:onClick="onRegister"
+                android:background="@color/cardview_light_background"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="2.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_below="@+id/activity_input_rl_top"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:padding="2dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_weight="2.5"
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:paddingLeft="4dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:src="@drawable/ic_label"
+                                    android:scaleType="centerInside"
+                                    android:tint="@color/colorAccent"
+                                    android:layout_weight="0.5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:text="이름"
+                                    android:paddingLeft="6dp"
+                                    android:gravity="center_vertical|left"
+                                    android:layout_weight="2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_alignParentRight="true"
+                                android:background="@android:color/darker_gray"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_weight="7"
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/activity_input_acet_name"
+                                android:inputType="text"
+                                android:background="@null"
+                                android:paddingLeft="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:padding="2dp"
+                    android:layout_margin="1dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_weight="2.5"
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:paddingLeft="4dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:src="@drawable/ic_label"
+                                    android:scaleType="centerInside"
+                                    android:tint="@color/colorAccent"
+                                    android:layout_weight="0.5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:text="나이"
+                                    android:paddingLeft="6dp"
+                                    android:gravity="center_vertical|left"
+                                    android:layout_weight="2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_alignParentRight="true"
+                                android:background="@android:color/darker_gray"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_weight="7"
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <Spinner
+                                android:id="@+id/activity_input_spn_age"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:entries="@array/ages" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:padding="2dp"
+                    android:layout_margin="1dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:paddingLeft="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize">
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:src="@drawable/ic_label"
+                                android:scaleType="centerInside"
+                                android:tint="@color/colorAccent"
+                                android:layout_weight="0.5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:text="생년월일"
+                                android:paddingLeft="6dp"
+                                android:gravity="center_vertical|left"
+                                android:layout_weight="9"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <View
+                            android:background="@android:color/darker_gray"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+                        <RelativeLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize">
+
+                            <Spinner
+                                android:id="@+id/activity_input_spn_year"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/activity_input_spn_month"
+                                android:textAlignment="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:entries="@array/year" />
+
+                            <Spinner
+                                android:id="@+id/activity_input_spn_month"
+                                android:layout_centerInParent="true"
+                                android:textAlignment="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:entries="@array/month" />
+
+                            <Spinner
+                                android:id="@+id/activity_input_spn_day"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/activity_input_spn_month"
+                                android:textAlignment="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:entries="@array/date" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:padding="2dp"
+                    android:layout_margin="1dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_weight="2.5"
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:paddingLeft="4dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:src="@drawable/ic_label"
+                                    android:scaleType="centerInside"
+                                    android:tint="@color/colorAccent"
+                                    android:layout_weight="0.5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:text="혈액형"
+                                    android:paddingLeft="6dp"
+                                    android:gravity="center_vertical|left"
+                                    android:layout_weight="2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_alignParentRight="true"
+                                android:background="@android:color/darker_gray"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_weight="7"
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <Spinner
+                                android:id="@+id/activity_input_spn_blood"
+                                android:layout_weight="1"
+                                android:textAlignment="center"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:entries="@array/bloods" />
+
+                            <Spinner
+                                android:id="@+id/activity_input_spn_rh"
+                                android:layout_weight="1"
+                                android:textAlignment="center"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:entries="@array/rhs" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:padding="2dp"
+                    android:layout_margin="1dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize">
+
+                            <RelativeLayout
+                                android:layout_weight="2.5"
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="4dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <android.support.v7.widget.AppCompatImageView
+                                        android:src="@drawable/ic_label"
+                                        android:scaleType="centerInside"
+                                        android:tint="@color/colorAccent"
+                                        android:layout_weight="0.5"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent" />
+
+                                    <android.support.v7.widget.AppCompatTextView
+                                        android:text="주소"
+                                        android:paddingLeft="6dp"
+                                        android:gravity="center_vertical|left"
+                                        android:layout_weight="2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_alignParentRight="true"
+                                    android:background="@android:color/darker_gray"
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"/>
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_weight="7"
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/activity_input_actv_address"
+                                    android:text=""
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:background="@android:color/darker_gray"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize">
+
+                            <RelativeLayout
+                                android:layout_weight="2.5"
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="4dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <android.support.v7.widget.AppCompatImageView
+                                        android:src="@drawable/ic_label"
+                                        android:scaleType="centerInside"
+                                        android:tint="@color/colorAccent"
+                                        android:layout_weight="0.5"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent" />
+
+                                    <android.support.v7.widget.AppCompatTextView
+                                        android:text="상세주소"
+                                        android:paddingLeft="6dp"
+                                        android:gravity="center_vertical|left"
+                                        android:layout_weight="2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_alignParentRight="true"
+                                    android:background="@android:color/darker_gray"
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"/>
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_weight="7"
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/activity_input_acet_detail"
+                                    android:inputType="text"
+                                    android:background="@null"
+                                    android:paddingLeft="8dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:background="@android:color/darker_gray"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/activity_input_acet_address"
+                                android:inputType="text"
+                                android:background="@null"
+                                android:paddingLeft="8dp"
+                                android:hint="우편번호 및 동으로 검색하세요"
+                                android:layout_weight="8"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent" />
+
+                            <android.support.v7.widget.AppCompatButton
+                                android:text="검 색"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"
+                                android:backgroundTint="@color/colorAccent"
+                                android:gravity="center"
+                                android:onClick="onSearch"
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:padding="2dp"
+                    android:layout_margin="1dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize">
+
+                            <LinearLayout
+                                android:paddingLeft="4dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:src="@drawable/ic_label"
+                                    android:scaleType="centerInside"
+                                    android:tint="@color/colorAccent"
+                                    android:layout_weight="0.5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:text="긴급 연락처"
+                                    android:paddingLeft="6dp"
+                                    android:gravity="center_vertical|left"
+                                    android:layout_weight="9"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_alignParentBottom="true"
+                                android:background="@android:color/darker_gray"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"/>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize">
+
+                            <RelativeLayout
+                                android:layout_weight="2.5"
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:paddingLeft="20dp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <android.support.v7.widget.AppCompatImageView
+                                        android:src="@drawable/ic_label"
+                                        android:scaleType="centerInside"
+                                        android:tint="@color/colorAccent"
+                                        android:layout_weight="0.5"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent" />
+
+                                    <android.support.v7.widget.AppCompatTextView
+                                        android:text="관계"
+                                        android:paddingLeft="6dp"
+                                        android:gravity="center_vertical|left"
+                                        android:layout_weight="2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_alignParentRight="true"
+                                    android:background="@android:color/darker_gray"
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"/>
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_weight="7"
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/activity_input_acet_relationship"
+                                    android:inputType="text"
+                                    android:background="@null"
+                                    android:paddingLeft="8dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:background="@android:color/darker_gray"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize">
+
+                            <RelativeLayout
+                                android:layout_weight="2.5"
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:paddingLeft="20dp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <android.support.v7.widget.AppCompatImageView
+                                        android:src="@drawable/ic_label"
+                                        android:scaleType="centerInside"
+                                        android:tint="@color/colorAccent"
+                                        android:layout_weight="0.5"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent" />
+
+                                    <android.support.v7.widget.AppCompatTextView
+                                        android:text="연락처"
+                                        android:paddingLeft="6dp"
+                                        android:gravity="center_vertical|left"
+                                        android:layout_weight="2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_alignParentRight="true"
+                                    android:background="@android:color/darker_gray"
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"/>
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_weight="7"
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/activity_input_acet_phone"
+                                    android:inputType="phone"
+                                    android:background="@null"
+                                    android:paddingLeft="8dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:padding="2dp"
+                    android:layout_margin="1dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize">
+
+                            <LinearLayout
+                                android:paddingLeft="4dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:src="@drawable/ic_label"
+                                    android:scaleType="centerInside"
+                                    android:tint="@color/colorAccent"
+                                    android:layout_weight="0.5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:text="평상시 앓고 있던 질환"
+                                    android:paddingLeft="6dp"
+                                    android:gravity="center_vertical|left"
+                                    android:layout_weight="9"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_alignParentBottom="true"
+                                android:background="@android:color/darker_gray"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"/>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/activity_input_acet_disease"
+                                android:inputType="text"
+                                android:background="@null"
+                                android:paddingLeft="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:padding="2dp"
+                    android:layout_margin="1dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize">
+
+                            <LinearLayout
+                                android:paddingLeft="4dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:src="@drawable/ic_label"
+                                    android:scaleType="centerInside"
+                                    android:tint="@color/colorAccent"
+                                    android:layout_weight="0.5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:text="알레르기 및 부작용이 있는 약품"
+                                    android:paddingLeft="6dp"
+                                    android:gravity="center_vertical|left"
+                                    android:layout_weight="9"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_alignParentBottom="true"
+                                android:background="@android:color/darker_gray"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"/>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/activity_input_acet_drug"
+                                android:inputType="text"
+                                android:background="@null"
+                                android:paddingLeft="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:padding="2dp"
+                    android:layout_margin="1dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_weight="2.5"
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:paddingLeft="4dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:src="@drawable/ic_label_outline"
+                                    android:scaleType="centerInside"
+                                    android:tint="@color/colorAccent"
+                                    android:layout_weight="0.5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:text="선호병원"
+                                    android:paddingLeft="6dp"
+                                    android:gravity="center_vertical|left"
+                                    android:layout_weight="2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_alignParentRight="true"
+                                android:background="@android:color/darker_gray"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_weight="7"
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/activity_input_acet_hospital"
+                                android:inputType="text"
+                                android:background="@null"
+                                android:paddingLeft="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:padding="2dp"
+                    android:layout_margin="1dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_weight="2.5"
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:paddingLeft="4dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:src="@drawable/ic_label_outline"
+                                    android:scaleType="centerInside"
+                                    android:tint="@color/colorAccent"
+                                    android:layout_weight="0.5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:text="주치의"
+                                    android:paddingLeft="6dp"
+                                    android:gravity="center_vertical|left"
+                                    android:layout_weight="2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_alignParentRight="true"
+                                android:background="@android:color/darker_gray"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_weight="7"
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/activity_input_acet_doctor"
+                                android:inputType="text"
+                                android:background="@null"
+                                android:paddingLeft="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:padding="2dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize">
+
+                            <LinearLayout
+                                android:paddingLeft="4dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:src="@drawable/ic_label_outline"
+                                    android:scaleType="centerInside"
+                                    android:tint="@color/colorAccent"
+                                    android:layout_weight="0.5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:text="기타 남길말"
+                                    android:paddingLeft="6dp"
+                                    android:gravity="center_vertical|left"
+                                    android:layout_weight="9"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_alignParentBottom="true"
+                                android:background="@android:color/darker_gray"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"/>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/activity_input_acet_ment"
+                                android:inputType="textMultiLine"
+                                android:text="응급 상황이니 구조 바랍니다"
+                                android:background="@null"
+                                android:paddingLeft="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_input_rl_description"
+        android:padding="8dp"
+        android:background="@color/cardview_light_background"
+        android:onClick="onDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/img_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_input_rl_agree"
+        android:clickable="true"
+        android:background="@color/cardview_light_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--android:lines="1"-->
+        <!--android:autoSizeTextType="uniform"-->
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_marginTop="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="불러줘 119"
+            android:textStyle="bold"
+            android:textSize="48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/img_ambulance"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/activity_input_acbtn_agree"
+            android:text="확인"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:onClick="onAgree"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+        <RelativeLayout
+            android:layout_above="@+id/activity_input_acbtn_agree"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/activity_input_accb_agree"
+                android:text="이용약관과 개인정보 처리방침에 동의합니다"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:text="동의서"
+                android:onClick="onDocument"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/activity_input_cover"
+        android:background="@color/cardview_light_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

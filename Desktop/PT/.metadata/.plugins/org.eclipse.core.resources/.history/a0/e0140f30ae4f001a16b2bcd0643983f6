@@ -1,0 +1,31 @@
+package banksystem;
+
+public class Manager {
+	
+	Bank myBank;
+	
+	User user1;
+	User user2;
+	User user3;
+	
+	private void sendMoney(User u1, User u2, int balance) {
+		
+	}
+	
+	private void withDrawal(User u1, int balance) {
+		
+	}
+	
+	private void deposit(User u1, int balance) {
+		
+	}
+	
+	private void initSystem() {
+		
+	}
+	
+	private void displayAll() {
+		
+	}
+
+}

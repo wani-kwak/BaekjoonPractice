@@ -1,0 +1,23 @@
+package banksystem;
+
+public class Bank {
+	
+	private String bankName;
+	
+	public Bank(String name) {
+		bankName = name; // 같은 이름이아니면 this 안붙혀도 됨.
+	} 
+	
+	public void sendMoney(User u1, User u2, int balance) {
+		
+	}
+	
+	public void withDrawal(User u1, int balance){
+		
+	}
+	
+	public void deposit(User u1, int balance) {
+		
+	}
+
+}

@@ -1,0 +1,306 @@
+<resources>
+    <string name="app_name">불러줘 119</string>
+
+    <string-array name="ages">
+
+        <item>0 세</item>
+        <item>1 세</item>
+        <item>2 세</item>
+        <item>3 세</item>
+        <item>4 세</item>
+        <item>5 세</item>
+        <item>6 세</item>
+        <item>7 세</item>
+        <item>8 세</item>
+        <item>9 세</item>
+
+        <item>10 세</item>
+        <item>11 세</item>
+        <item>12 세</item>
+        <item>13 세</item>
+        <item>14 세</item>
+        <item>15 세</item>
+        <item>16 세</item>
+        <item>17 세</item>
+        <item>18 세</item>
+        <item>19 세</item>
+
+        <item>20 세</item>
+        <item>21 세</item>
+        <item>22 세</item>
+        <item>23 세</item>
+        <item>24 세</item>
+        <item>25 세</item>
+        <item>26 세</item>
+        <item>27 세</item>
+        <item>28 세</item>
+        <item>29 세</item>
+
+        <item>30 세</item>
+        <item>31 세</item>
+        <item>32 세</item>
+        <item>33 세</item>
+        <item>34 세</item>
+        <item>35 세</item>
+        <item>36 세</item>
+        <item>37 세</item>
+        <item>38 세</item>
+        <item>39 세</item>
+
+        <item>40 세</item>
+        <item>41 세</item>
+        <item>42 세</item>
+        <item>43 세</item>
+        <item>44 세</item>
+        <item>45 세</item>
+        <item>46 세</item>
+        <item>47 세</item>
+        <item>48 세</item>
+        <item>49 세</item>
+
+        <item>50 세</item>
+        <item>51 세</item>
+        <item>52 세</item>
+        <item>53 세</item>
+        <item>54 세</item>
+        <item>55 세</item>
+        <item>56 세</item>
+        <item>57 세</item>
+        <item>58 세</item>
+        <item>59 세</item>
+
+        <item>60 세</item>
+        <item>61 세</item>
+        <item>62 세</item>
+        <item>63 세</item>
+        <item>64 세</item>
+        <item>65 세</item>
+        <item>66 세</item>
+        <item>67 세</item>
+        <item>68 세</item>
+        <item>69 세</item>
+
+        <item>70 세</item>
+        <item>71 세</item>
+        <item>72 세</item>
+        <item>73 세</item>
+        <item>74 세</item>
+        <item>75 세</item>
+        <item>76 세</item>
+        <item>77 세</item>
+        <item>78 세</item>
+        <item>79 세</item>
+
+        <item>80 세</item>
+        <item>81 세</item>
+        <item>82 세</item>
+        <item>83 세</item>
+        <item>84 세</item>
+        <item>85 세</item>
+        <item>86 세</item>
+        <item>87 세</item>
+        <item>88 세</item>
+        <item>89 세</item>
+
+        <item>90 세</item>
+        <item>91 세</item>
+        <item>92 세</item>
+        <item>93 세</item>
+        <item>94 세</item>
+        <item>95 세</item>
+        <item>96 세</item>
+        <item>97 세</item>
+        <item>98 세</item>
+        <item>99 세</item>
+    </string-array>
+
+    <string-array name="year">
+
+        <item>1900 년</item>
+        <item>1901 년</item>
+        <item>1902 년</item>
+        <item>1903 년</item>
+        <item>1904 년</item>
+        <item>1905 년</item>
+        <item>1906 년</item>
+        <item>1907 년</item>
+        <item>1908 년</item>
+        <item>1909 년</item>
+        <item>1910 년</item>
+        <item>1911 년</item>
+        <item>1912 년</item>
+        <item>1913 년</item>
+        <item>1914 년</item>
+        <item>1915 년</item>
+        <item>1916 년</item>
+        <item>1917 년</item>
+        <item>1918 년</item>
+        <item>1919 년</item>
+        <item>1920 년</item>
+        <item>1921 년</item>
+        <item>1922 년</item>
+        <item>1923 년</item>
+        <item>1924 년</item>
+        <item>1925 년</item>
+        <item>1926 년</item>
+        <item>1927 년</item>
+        <item>1928 년</item>
+        <item>1929 년</item>
+        <item>1930 년</item>
+        <item>1931 년</item>
+        <item>1932 년</item>
+        <item>1933 년</item>
+        <item>1934 년</item>
+        <item>1935 년</item>
+        <item>1936 년</item>
+        <item>1937 년</item>
+        <item>1938 년</item>
+        <item>1939 년</item>
+        <item>1940 년</item>
+        <item>1941 년</item>
+        <item>1942 년</item>
+        <item>1943 년</item>
+        <item>1944 년</item>
+        <item>1945 년</item>
+        <item>1946 년</item>
+        <item>1947 년</item>
+        <item>1948 년</item>
+        <item>1949 년</item>
+        <item>1950 년</item>
+        <item>1951 년</item>
+        <item>1952 년</item>
+        <item>1953 년</item>
+        <item>1954 년</item>
+        <item>1955 년</item>
+        <item>1956 년</item>
+        <item>1957 년</item>
+        <item>1958 년</item>
+        <item>1959 년</item>
+        <item>1960 년</item>
+        <item>1961 년</item>
+        <item>1962 년</item>
+        <item>1963 년</item>
+        <item>1964 년</item>
+        <item>1965 년</item>
+        <item>1966 년</item>
+        <item>1967 년</item>
+        <item>1968 년</item>
+        <item>1969 년</item>
+        <item>1970 년</item>
+        <item>1971 년</item>
+        <item>1972 년</item>
+        <item>1973 년</item>
+        <item>1974 년</item>
+        <item>1975 년</item>
+        <item>1976 년</item>
+        <item>1977 년</item>
+        <item>1978 년</item>
+        <item>1979 년</item>
+        <item>1980 년</item>
+        <item>1981 년</item>
+        <item>1982 년</item>
+        <item>1983 년</item>
+        <item>1984 년</item>
+        <item>1985 년</item>
+        <item>1986 년</item>
+        <item>1987 년</item>
+        <item>1988 년</item>
+        <item>1989 년</item>
+        <item>1990 년</item>
+        <item>1991 년</item>
+        <item>1992 년</item>
+        <item>1993 년</item>
+        <item>1994 년</item>
+        <item>1995 년</item>
+        <item>1996 년</item>
+        <item>1997 년</item>
+        <item>1998 년</item>
+        <item>1999 년</item>
+        <item>2000 년</item>
+        <item>2001 년</item>
+        <item>2002 년</item>
+        <item>2003 년</item>
+        <item>2004 년</item>
+        <item>2005 년</item>
+        <item>2006 년</item>
+        <item>2007 년</item>
+        <item>2008 년</item>
+        <item>2009 년</item>
+        <item>2010 년</item>
+        <item>2011 년</item>
+        <item>2012 년</item>
+        <item>2013 년</item>
+        <item>2014 년</item>
+        <item>2015 년</item>
+        <item>2016 년</item>
+        <item>2017 년</item>
+        <item>2018 년</item>
+    </string-array>
+
+    <string-array name="month">
+
+        <item>1 월</item>
+        <item>2 월</item>
+        <item>3 월</item>
+        <item>4 월</item>
+        <item>5 월</item>
+        <item>6 월</item>
+        <item>7 월</item>
+        <item>8 월</item>
+        <item>9 월</item>
+        <item>10 월</item>
+
+        <item>11 월</item>
+        <item>12 월</item>
+    </string-array>
+
+    <string-array name="date">
+
+        <item>1 일</item>
+        <item>2 일</item>
+        <item>3 일</item>
+        <item>4 일</item>
+        <item>5 일</item>
+        <item>6 일</item>
+        <item>7 일</item>
+        <item>8 일</item>
+        <item>9 일</item>
+        <item>10 일</item>
+
+        <item>11 일</item>
+        <item>12 일</item>
+        <item>13 일</item>
+        <item>14 일</item>
+        <item>15 일</item>
+        <item>16 일</item>
+        <item>17 일</item>
+        <item>18 일</item>
+        <item>19 일</item>
+        <item>20 일</item>
+
+        <item>21 일</item>
+        <item>22 일</item>
+        <item>23 일</item>
+        <item>24 일</item>
+        <item>25 일</item>
+        <item>26 일</item>
+        <item>27 일</item>
+        <item>28 일</item>
+        <item>29 일</item>
+        <item>30 일</item>
+
+        <item>31 일</item>
+    </string-array>
+
+    <string-array name="bloods">
+        <item>A 형</item>
+        <item>AB 형</item>
+        <item>B 형</item>
+        <item>O 형</item>
+    </string-array>
+
+    <string-array name="rhs">
+        <item>RH+</item>
+        <item>RH-</item>
+    </string-array>
+</resources>

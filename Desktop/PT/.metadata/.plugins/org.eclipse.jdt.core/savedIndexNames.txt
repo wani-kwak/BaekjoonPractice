@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/Users/wani/Desktop/PT/.metadata/.plugins/org.eclipse.jdt.core
+3835738501.index
+2583527964.index
+127473599.index

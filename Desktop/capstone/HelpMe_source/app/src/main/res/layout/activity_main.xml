@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.neominum.helpme.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/activity_main_rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/activity_main_actv_location"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/activity_main_rl_top"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/activity_main_acbtn_reqest"
+                    android:text="응급 요청"
+                    android:textSize="64sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/colorAccent"
+                    android:gravity="center"
+                    android:onClick="onRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/activity_main_acbtn_modify"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:text="개인 정보 수정"
+                    android:textSize="64sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/colorAccent"
+                    android:gravity="center"
+                    android:onClick="onModify"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/activity_main_acbtn_toggle"
+                    android:text="바로가기 켜기"
+                    android:textSize="64sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/colorAccent"
+                    android:gravity="center"
+                    android:onClick="onToggle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

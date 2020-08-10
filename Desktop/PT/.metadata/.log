@@ -1,0 +1,96 @@
+!SESSION 2020-01-29 14:20:21.867 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=9
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ko_TL
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/wani/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/wani/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-29 14:20:23.583
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2020-01-29 14:21:04.533
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-01-29 14:21:04.533
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2020-01-29 14:21:05.678
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2020-01-29 14:21:05.692
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+!SESSION 2020-01-29 14:53:58.451 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=9
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ko_TL
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/wani/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/wani/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-29 14:54:00.673
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2020-01-31 23:05:05.992 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=9
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ko_TL
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/wani/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/wani/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-31 23:05:08.276
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2020-02-13 10:05:24.594 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200110-0905
+java.version=9
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ko_TL
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/wani/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/wani/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-13 10:05:36.106
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-02-13 10:05:38.257
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-02-13 10:05:45.218
+!MESSAGE Removing PartDescriptorImpl with the "com.genuitec.eclipse.icons.designer.ui.views.IconsDesignerView" id and the "Icon Designer" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+!SESSION 2020-02-13 16:05:02.064 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200110-0905
+java.version=9
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ko_TL
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/wani/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/wani/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-13 16:05:15.294
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-02-13 16:05:17.059
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+!SESSION 2020-02-15 13:07:53.701 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200110-0905
+java.version=9
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ko_TL
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/wani/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/wani/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-15 13:08:01.639
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-02-15 13:08:05.169
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+!SESSION 2020-02-18 10:36:21.069 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200110-0905
+java.version=9
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ko_TL
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/wani/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/wani/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2020-02-18 10:55:02.598
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-02-18 10:55:05.163
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
